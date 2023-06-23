@@ -5,21 +5,55 @@ import MainFooter from '../components/mainFooter.js';
 import BannerHero from '../components/bannerHero';
 
 export default function ResultPage() {
+  const isBrowser = typeof window !== "undefined";
 
-  const sanFortalezas = parseInt(localStorage.getItem('san-fortalezas')) * 100 / 20;
-  const colFortalezas = parseInt(localStorage.getItem('col-fortalezas')) * 100 / 20;
-  const melFortalezas = parseInt(localStorage.getItem('mel-fortalezas')) * 100 / 20;
-  const flemFortalezas = parseInt(localStorage.getItem('flem-fortalezas')) * 100 / 20;
+  let sanFortalezas = 0;
+  let colFortalezas = 0;
+  let melFortalezas = 0;
+  let flemFortalezas = 0;
+
+  let sanDebilidades = 0;
+  let colDebilidades = 0;
+  let melDebilidades = 0;
+  let flemDebilidades = 0;
+
+  let sanTotal = 0;
+  let colTotal = 0;
+  let melTotal = 0;
+  let flemTotal = 0;
+
+  if (isBrowser) {    
+    sanFortalezas = parseInt(localStorage.getItem('san-fortalezas')) * 100 / 20;
+    colFortalezas = parseInt(localStorage.getItem('col-fortalezas')) * 100 / 20;
+    melFortalezas = parseInt(localStorage.getItem('mel-fortalezas')) * 100 / 20;
+    flemFortalezas = parseInt(localStorage.getItem('flem-fortalezas')) * 100 / 20;
+    
+    sanDebilidades = parseInt(localStorage.getItem('san-debilidades')) * 100 / 20;
+    colDebilidades = parseInt(localStorage.getItem('col-debilidades')) * 100 / 20;
+    melDebilidades = parseInt(localStorage.getItem('mel-debilidades')) * 100 / 20;
+    flemDebilidades = parseInt(localStorage.getItem('flem-debilidades')) * 100 / 20;
+    
+    sanTotal = parseInt(localStorage.getItem('san-total')) * 100 / 40;
+    colTotal = parseInt(localStorage.getItem('col-total')) * 100 / 40;
+    melTotal = parseInt(localStorage.getItem('mel-total')) * 100 / 40;
+    flemTotal = parseInt(localStorage.getItem('flem-total')) * 100 / 40;
+    // const sanFortalezas = parseInt(localStorage.getItem('san-fortalezas')) * 100 / 20;
+    // const colFortalezas = parseInt(localStorage.getItem('col-fortalezas')) * 100 / 20;
+    // const melFortalezas = parseInt(localStorage.getItem('mel-fortalezas')) * 100 / 20;
+    // const flemFortalezas = parseInt(localStorage.getItem('flem-fortalezas')) * 100 / 20;
+    
+    // const sanDebilidades = parseInt(localStorage.getItem('san-debilidades')) * 100 / 20;
+    // const colDebilidades = parseInt(localStorage.getItem('col-debilidades')) * 100 / 20;
+    // const melDebilidades = parseInt(localStorage.getItem('mel-debilidades')) * 100 / 20;
+    // const flemDebilidades = parseInt(localStorage.getItem('flem-debilidades')) * 100 / 20;
+    
+    // const sanTotal = parseInt(localStorage.getItem('san-total')) * 100 / 40;
+    // const colTotal = parseInt(localStorage.getItem('col-total')) * 100 / 40;
+    // const melTotal = parseInt(localStorage.getItem('mel-total')) * 100 / 40;
+    // const flemTotal = parseInt(localStorage.getItem('flem-total')) * 100 / 40;
+  }
   
-  const sanDebilidades = parseInt(localStorage.getItem('san-debilidades')) * 100 / 20;
-  const colDebilidades = parseInt(localStorage.getItem('col-debilidades')) * 100 / 20;
-  const melDebilidades = parseInt(localStorage.getItem('mel-debilidades')) * 100 / 20;
-  const flemDebilidades = parseInt(localStorage.getItem('flem-debilidades')) * 100 / 20;
-  
-  const sanTotal = parseInt(localStorage.getItem('san-total')) * 100 / 40;
-  const colTotal = parseInt(localStorage.getItem('col-total')) * 100 / 40;
-  const melTotal = parseInt(localStorage.getItem('mel-total')) * 100 / 40;
-  const flemTotal = parseInt(localStorage.getItem('flem-total')) * 100 / 40;
+
 
   return (
     <main>
