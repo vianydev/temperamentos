@@ -1,6 +1,3 @@
-'use client'
-import { useEffect } from "react"
-
 const InfoPopUp = ({ info, id, }) => {
 
   return (

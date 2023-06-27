@@ -6,7 +6,8 @@ const MainFooter = () => {
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
               <span>Creado por </span>
-              <a href="https://vianydev.github.io/" className="text-gray-500 transition hover:text-indigo-600 hover:font-bold">
+              <a href="https://vianydev.github.io/" rel="noreferrer"
+                target="_blank" className="text-gray-500 transition hover:text-indigo-600 hover:font-bold">
                 Digital Growers | vianydev
               </a>
             </li>

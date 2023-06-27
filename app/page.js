@@ -1,12 +1,10 @@
 'use client'
 import { useState, useEffect } from "react";
 import RadioButton from './components/radioButton';
-import Navbar from './components/navbav';
 import BannerHero from './components/bannerHero.js'
-import MainFooter from './components/mainFooter.js'
 import fortalezas from './assets/fortalezas';
 import debilidades from './assets/debilidades';
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Home() {
   const [ selectedFortalezas, setSelectedFortalezas ] = useState([]);
@@ -116,8 +114,7 @@ export default function Home() {
   }, [sanResults, colResults, melResults, flemResults])
 
   return (
-    <main className='bg-gray-100 w-full'>
-      <Navbar />
+    <div className='bg-gray-100 w-full'>
       <BannerHero />
       <div id="question-rows" className="flex flex-col justify-center text-center w-full">
         <div id="fortalezas-rows" className='mx-2 md:mx-10'>
@@ -168,21 +165,13 @@ export default function Home() {
         </div>
         <div id="count-results" className='mx-2 md:mx-10 pb-8'>
           <Link
-            href={`/results`}
+            href='/results'
             onClick={handleResults}
             className="mt-5 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
           > Resultados </Link>
 
-          {/* <button
-            onClick={handleResults}
-            className="mt-5 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
-          >
-            Resultados {sanResults.fortalezas}
-          </button> */}
-
         </div>
       </div>
-      <MainFooter />
-    </main>
+    </div>
   )
 }

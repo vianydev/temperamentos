@@ -1,7 +1,4 @@
 'use client'
-import { useEffect } from 'react';
-import Navbar from '../components/navbav';
-import MainFooter from '../components/mainFooter.js';
 import BannerHero from '../components/bannerHero';
 
 export default function ResultPage() {
@@ -37,27 +34,10 @@ export default function ResultPage() {
     colTotal = parseInt(localStorage.getItem('col-total')) * 100 / 40;
     melTotal = parseInt(localStorage.getItem('mel-total')) * 100 / 40;
     flemTotal = parseInt(localStorage.getItem('flem-total')) * 100 / 40;
-    // const sanFortalezas = parseInt(localStorage.getItem('san-fortalezas')) * 100 / 20;
-    // const colFortalezas = parseInt(localStorage.getItem('col-fortalezas')) * 100 / 20;
-    // const melFortalezas = parseInt(localStorage.getItem('mel-fortalezas')) * 100 / 20;
-    // const flemFortalezas = parseInt(localStorage.getItem('flem-fortalezas')) * 100 / 20;
-    
-    // const sanDebilidades = parseInt(localStorage.getItem('san-debilidades')) * 100 / 20;
-    // const colDebilidades = parseInt(localStorage.getItem('col-debilidades')) * 100 / 20;
-    // const melDebilidades = parseInt(localStorage.getItem('mel-debilidades')) * 100 / 20;
-    // const flemDebilidades = parseInt(localStorage.getItem('flem-debilidades')) * 100 / 20;
-    
-    // const sanTotal = parseInt(localStorage.getItem('san-total')) * 100 / 40;
-    // const colTotal = parseInt(localStorage.getItem('col-total')) * 100 / 40;
-    // const melTotal = parseInt(localStorage.getItem('mel-total')) * 100 / 40;
-    // const flemTotal = parseInt(localStorage.getItem('flem-total')) * 100 / 40;
   }
-  
-
 
   return (
-    <main>
-      <Navbar />
+    <div>
       <BannerHero />
       <div className="py-2 mx-2 grid grid-cols-1 md:grid-cols-2 gap-2">
         
@@ -85,15 +65,6 @@ export default function ResultPage() {
               </div>
             </div>
           </div>
-          {/* <div className='pt-2'>
-            <h2 className='text-md font-light inline-block pt-1'>Total</h2>
-            <div className="w-full h-8 bg-gray-400 rounded-full mt-1">
-              <div className={`h-full text-center text-sm text-white font-extrabold bg-red-400 rounded-full`}
-                style={{ width: `${sanTotal}%` }}>
-                <p className='ml-2 h-[inherit] flex items-center'>{sanTotal}%</p>
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <div className="block p-4 my-2 bg-white rounded-lg shadow w-full lg:w-2/3 lg:place-self-start">
@@ -120,15 +91,6 @@ export default function ResultPage() {
               </div>
             </div>
           </div>
-          {/* <div className='pt-2'>
-            <h2 className='text-md font-light inline-block pt-1'>Total</h2>
-            <div className="w-full h-8 bg-gray-400 rounded-full mt-1">
-              <div className={`h-full text-center text-sm text-white font-extrabold bg-yellow-500 rounded-full`}
-                style={{ width: `${colTotal}%` }}>
-                <p className='ml-2 h-[inherit] flex items-center'>{colTotal}%</p>
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <div className="block p-4 my-2 bg-white rounded-lg shadow w-full lg:w-2/3 lg:place-self-end">
@@ -155,15 +117,6 @@ export default function ResultPage() {
               </div>
             </div>
           </div>
-          {/* <div className='pt-2'>
-            <h2 className='text-md font-light inline-block pt-1'>Total</h2>
-            <div className="w-full h-8 bg-gray-400 rounded-full mt-1">
-              <div className={`h-full text-center text-sm text-white font-extrabold bg-blue-500 rounded-full`}
-                style={{ width: `${melTotal}%` }}>
-                <p className='ml-2 h-[inherit] flex items-center'>{melTotal}%</p>
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <div className="block p-4 my-2 bg-white rounded-lg shadow w-full lg:w-2/3 lg:place-self-start">
@@ -190,20 +143,8 @@ export default function ResultPage() {
               </div>
             </div>
           </div>
-          {/* <div className='pt-2'>
-            <h2 className='text-md font-light inline-block pt-1'>Total</h2>
-            <div className="w-full h-8 bg-gray-400 rounded-full mt-1">
-              <div className={`h-full text-center text-sm text-white font-extrabold bg-green-500 rounded-full`}
-                style={{ width: `${flemTotal}%` }}>
-                <p className='ml-2 h-[inherit] flex items-center'>{flemTotal}%</p>
-              </div>
-            </div>
-          </div> */}
         </div>
-
       </div>
-
-      <MainFooter />
-    </main>
+    </div>
   )
 }

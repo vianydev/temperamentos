@@ -5,10 +5,10 @@ const Navbar = () => {
     <div className="2xl:mx-auto fixed top-0 w-full">
       <div className="bg-white rounded shadow-lg py-5 px-3 md:px-7">
         <nav className="flex justify-between">
-          <Link href='/'>
+          <Link href='/' passHref prefetch={false}>
             <h2 className="font-normal text-2xl leading-6 text-gray-800">Temperamentos</h2>
           </Link>
-
+        
           <div className=" flex space-x-5 justify-center items-center pl-2">
             <div className="relative cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">
               <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
