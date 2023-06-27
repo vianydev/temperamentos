@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:gh-pages": "cross-env NODE_ENV=production NEXT_PUBLIC_BASE_PATH=/temperamentos next build",
-    "deploy": "next build && npx gh-pages -d out"
+    "deploy": "next build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages --dotfiles"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",

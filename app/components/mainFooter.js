@@ -6,7 +6,7 @@ const MainFooter = () => {
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
               <span>Creado por </span>
-              <a href="#" className="text-gray-500 transition hover:text-indigo-600 hover:font-bold">
+              <a href="https://vianydev.github.io/" className="text-gray-500 transition hover:text-indigo-600 hover:font-bold">
                 Digital Growers | vianydev
               </a>
             </li>
@@ -15,7 +15,7 @@ const MainFooter = () => {
           <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
             <li>
               <a
-                href="/"
+                href="https://www.facebook.com/digitalgrowersmx"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"
@@ -39,7 +39,7 @@ const MainFooter = () => {
 
             <li>
               <a
-                href="/"
+                href="https://www.instagram.com/digitalgrowersmx/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"
@@ -63,29 +63,23 @@ const MainFooter = () => {
 
             <li>
               <a
-                href="/"
+                href="https://vianydev.github.io/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"
               >
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">Web</span>
 
-                <svg
-                  className="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                 </svg>
+
               </a>
             </li>
 
             <li>
               <a
-                href="/"
+                href="https://github.com/vianydev/temperamentos/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"
@@ -104,6 +98,7 @@ const MainFooter = () => {
                     clipRule="evenodd"
                   />
                 </svg>
+
               </a>
             </li>
           </ul>

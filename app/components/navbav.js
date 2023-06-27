@@ -1,10 +1,11 @@
-import Link from 'next/link'
+import Link from 'next/link';
+
 const Navbar = () => {
   return (
     <div className="2xl:mx-auto fixed top-0 w-full">
       <div className="bg-white rounded shadow-lg py-5 px-3 md:px-7">
         <nav className="flex justify-between">
-          <Link href={'/'}>
+          <Link href='/'>
             <h2 className="font-normal text-2xl leading-6 text-gray-800">Temperamentos</h2>
           </Link>
 
