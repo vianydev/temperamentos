@@ -59,7 +59,9 @@ const RadioButton = ({
           </svg>
         </div>
       </label>
-      <div className="flex justify-end">
+      {/* Popup to display word definition */}
+      
+      {/* <div className="flex justify-end">
         <button
           className="text-gray-400  hover:text-gray-800 mr-1"
           onClick={onOpen} >
@@ -93,8 +95,8 @@ const RadioButton = ({
             </svg>
           }
         </button>
-      </div>
-      <InfoPopUp info={info} id={id} />
+      </div> */}
+      {/* <InfoPopUp info={info} id={id} /> */}
     </div>
   )
 }

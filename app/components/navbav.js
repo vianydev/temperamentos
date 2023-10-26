@@ -2,11 +2,11 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="2xl:mx-auto fixed top-0 w-full">
+    <div className="2xl:mx-auto top-0 w-full">
       <div className="bg-white rounded shadow-lg py-5 px-3 md:px-7">
         <nav className="flex justify-between">
           <Link href='/' passHref prefetch={false}>
-            <h2 className="font-normal text-2xl leading-6 text-gray-800">Temperamentos</h2>
+            <h2 className="font-normal text-2xl leading-6 text-gray-800">Tempera-Test</h2>
           </Link>
         
           <div className=" flex space-x-5 justify-center items-center pl-2">

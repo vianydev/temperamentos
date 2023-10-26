@@ -114,52 +114,62 @@ export default function Home() {
   }, [sanResults, colResults, melResults, flemResults])
 
   return (
-    <div className='bg-gray-100 w-full'>
+    <div className='bg-base-100 w-full'>
       <BannerHero />
-      <div id="question-rows" className="flex flex-col justify-center text-center w-full">
-        <div id="fortalezas-rows" className='mx-2 md:mx-10'>
+      <div id="question-rows" className="flex flex-col justify-center text-center">
+        <div id="fortalezas-rows" className='mx-2 md:m-auto md:w-10/12 lg:w-8/12'>
           <h1 className='text-lg text-gray-900 uppercase tracking-wide'>Fortalezas</h1>
           {fortalezas.map((row, index) => (
             <fieldset
               id={`row-fort-${index}`}
               key={index}
-              className="w-full bg-slate-50 p-3 my-10 rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {row.map((item) => (
-                <div key={item.id}>
-                  <RadioButton
-                    name={item.name}
-                    keyassign={item.keyassign}
-                    text={item.text}
-                    id={item.id}
-                    value={item.value}
-                    info={item.info}
-                    handleAnswers={handleSelectedFortalezas}
-                  />
-                </div>
-              ))}
+              className=" bg-slate-200 p-3 my-10 rounded-md grid grid-cols-12 gap-2">
+              <div className="flex items-center	justify-center">
+                <h2 className="text-lg font-semibold text-slate-700	">{index + 1}</h2>
+              </div>
+              <div className="grid md:grid-cols-4 gap-4 col-span-11">
+                {row.map((item) => (
+                  <div key={item.id}>
+                    <RadioButton
+                      name={item.name}
+                      keyassign={item.keyassign}
+                      text={item.text}
+                      id={item.id}
+                      value={item.value}
+                      info={item.info}
+                      handleAnswers={handleSelectedFortalezas}
+                    />
+                  </div>
+                ))}
+              </div>
             </fieldset>
           ))}
         </div>
-        <div id="debilidades-rows" className='mx-2 md:mx-10'>
+        <div id="debilidades-rows" className='mx-2 md:m-auto md:w-10/12 lg:w-8/12'>
           <h1 className='text-lg text-gray-900 uppercase tracking-wide'>Debilidades</h1>
           {debilidades.map((row, index) => (
             <fieldset
               id={`row-deb-${index}`}
               key={index}
-              className="w-full bg-slate-50 p-3 my-10 rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {row.map((item) => (
-                <div key={item.id}>
-                  <RadioButton
-                    name={item.name}
-                    keyassign={item.keyassign}
-                    text={item.text}
-                    id={item.id}
-                    value={item.value}
-                    info={item.info}
-                    handleAnswers={handleSelectedDebilidades}
-                  />
-                </div>
-              ))}
+              className=" bg-slate-200/80 p-3 my-10 rounded-md grid grid-cols-12 gap-2">
+              <div className="flex items-center	justify-center">
+                <h2 className="text-lg font-semibold text-slate-700	">{index + 1}</h2>
+              </div>
+              <div className="grid md:grid-cols-4 gap-4 col-span-11">
+                {row.map((item) => (
+                  <div key={item.id}>
+                    <RadioButton
+                      name={item.name}
+                      keyassign={item.keyassign}
+                      text={item.text}
+                      id={item.id}
+                      value={item.value}
+                      info={item.info}
+                      handleAnswers={handleSelectedDebilidades}
+                    />
+                  </div>
+                ))}
+              </div>
             </fieldset>
           ))}
         </div>
@@ -168,8 +178,9 @@ export default function Home() {
             href='/results'
             onClick={handleResults}
             className="mt-5 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
-          > Resultados </Link>
-
+          >
+            Resultados
+          </Link>
         </div>
       </div>
     </div>

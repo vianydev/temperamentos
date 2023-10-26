@@ -1,0 +1,3 @@
+.purpleFilter:hover {
+  filter: invert(23%) sepia(97%) saturate(2051%) hue-rotate(234deg) brightness(96%) contrast(89%);
+}
