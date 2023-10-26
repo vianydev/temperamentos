@@ -10,7 +10,7 @@ const MainFooter = () => {
               <span>Creado por </span>
               <a href="https://vianydev.github.io/" rel="noreferrer"
                 target="_blank" className={`${styles.purpleFilter} text-gray-500 pl-2 inline-block transition`}>
-                <Image src="/vianey-logo.png" alt="vianydev" width={60} height={60} />
+                <Image src="/image/vianey-logo.png" alt="vianydev" width={60} height={60} />
               </a>
             </li>
           </ul>
