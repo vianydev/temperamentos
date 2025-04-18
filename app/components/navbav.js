@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="bg-white rounded shadow-lg py-5 px-3 md:px-7">
         <nav className="flex justify-between">
           <Link href='/' passHref prefetch={false}>
-            <h2 className="font-normal text-2xl leading-6 text-gray-800">Tempera-Test</h2>
+            <h2 className="font-normal text-2xl leading-6 text-gray-800">TemperaTest</h2>
           </Link>
         
           <div className=" flex space-x-5 justify-center items-center pl-2">

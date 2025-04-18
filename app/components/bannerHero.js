@@ -3,9 +3,9 @@ const BannerHero = () => {
     <div className="bg-base-200 min-h-screen mx-4 mt-10 flex flex-col justify-center align-middle">
       <div className="max-w-md text-center my-0 mx-auto">
         <h1 className="text-5xl font-bold">¡Bienvenido a TemperaTest!</h1>
-        <p className="py-6 text-lg">
+        {/* <p className="py-6 text-lg">
           ¿Te has preguntado alguna vez por qué reaccionas de cierta manera en situaciones específicas? ¿O cómo tu personalidad influye en tus decisiones diarias? TemperaTest está aquí para ayudarte a descubrirlo.
-        </p>
+        </p> */}
         <ul className="list-disc list-inside text-start py-2">
           <li className="py-2">Lee cuidadosamente y selecciona la característica que más te distingue en cada fila.</li>
           <li className="py-2">Recuerda seleccionar la característica que realmente te describe, no la que te gustaría tener.</li>

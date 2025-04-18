@@ -6,9 +6,9 @@ const MainFooter = () => {
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
-            <li className="flex content-center">
-              <span>Creado por </span>
-              <a href="https://vianydev.github.io/" rel="noreferrer"
+            <li className="flex content-center items-center ">
+              <span>Hecho con café y código por </span>
+              <a href="https://flatlatte.com/" rel="noreferrer"
                 target="_blank" className={`${styles.purpleFilter} text-gray-500 pl-2 inline-block transition`}>
                 <Image src="/image/vianey-logo.png" alt="vianydev" width={60} height={60} />
               </a>
@@ -18,7 +18,7 @@ const MainFooter = () => {
           <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
             <li>
               <a
-                href="https://www.facebook.com/digitalgrowersmx"
+                href="https://www.facebook.com/okflatlatte"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"
@@ -42,7 +42,7 @@ const MainFooter = () => {
 
             <li>
               <a
-                href="https://www.instagram.com/digitalgrowersmx/"
+                href="https://www.instagram.com/okflatlatte/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"
@@ -66,7 +66,7 @@ const MainFooter = () => {
 
             <li>
               <a
-                href="https://vianydev.github.io/"
+                href="https://flatlatte.com/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-indigo-600"

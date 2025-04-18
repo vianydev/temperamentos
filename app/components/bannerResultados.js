@@ -4,7 +4,7 @@ const BannerResultados = () => {
       <div className="max-w-md text-center my-0 mx-auto">  
         <h1 className="text-5xl font-bold tracking-widest">Resultados</h1>
         <p className="py-6 text-lg">
-          El resultado del test de temperamentos se basa en la premisa de que todos tenemos una combinación de los cuatro temperamentos principales, pero <span className="font-semibold bg-yellow-100">dos</span> de ellos son más <span className="font-semibold bg-yellow-100">predominantes </span>en nuestra personalidad.
+          El resultado del test de temperamentos se basa en la premisa de que todos tenemos una combinación de los cuatro temperamentos principales, pero <span className="font-semibold bg-yellow-100">dos</span> de ellos son <span className="font-semibold bg-yellow-100">predominantes </span>en nuestra personalidad.
         </p>
       </div>
       <div className="w-full">
