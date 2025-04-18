@@ -8,7 +8,7 @@ const MainFooter = () => {
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li className="flex content-center items-center ">
               <span>Hecho con café y código por </span>
-              <a href="https://flatlatte.com/" rel="noreferrer"
+              <a href="https://vianydev.github.io/" rel="noreferrer"
                 target="_blank" className={`${styles.purpleFilter} text-gray-500 pl-2 inline-block transition`}>
                 <Image src="/image/vianey-logo.png" alt="vianydev" width={60} height={60} />
               </a>
